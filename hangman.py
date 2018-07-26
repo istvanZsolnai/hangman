@@ -31,6 +31,7 @@ def guessing():
             print("Attaboy")
             print (" ".join(map(str,list_of_stipres)))
             print (" ".join(map(str,used_letters)))
+            drawing(guesses)
 
             if "-" not in list_of_stipres:
                 print("Congrats, you guessed it!")
@@ -55,8 +56,9 @@ def guessing():
             used_letters.append(user_input)
             print (" ".join(map(str,list_of_stipres)))
             print (" ".join(map(str,used_letters)))
-
-        drawing(guesses)
+            drawing(guesses)
+        
+        
 
 
 
